@@ -18,16 +18,21 @@
 
 <body>
     <!-- =========== Navbar ============ -->
-    <nav class="nav">
+    <nav>
         <div class="logo">
             <a href="/">Faizan</a>
         </div>
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">PROJECTS</a></li>
+        
+        <ul class="navLinks">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="#underdev">ABOUT</a></li>
+            <li><a href="#underdev">PROJECTS</a></li>
+            <img class="closeMenuBtn" src="./images/cross.png" alt="">
         </ul>
-        <a href="mailto:faizancodes@gmail.com" class="hello">Say Hello</a>
+        <a class="hello" href="mailto:faizancodes@gmail.com" >SAY HELLO</a>
+        <div class="mobileNav">
+            <img id="menuIcon" src="./images/menu-icon.svg" alt="menu-icon">
+        </div>
     </nav>
 
     <!-- =========== Home ============ -->
@@ -80,6 +85,13 @@
             </a>
         </div>
     </div>
+
+    <div id="underdev">
+        <p>Work in Progress</p>
+        This page is under Development
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

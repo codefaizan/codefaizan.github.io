@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,24 +6,25 @@
     text-decoration: none;
 }
 
-body{
+body {
     color: ghostwhite;
 }
 
 /* =========== Navbar ============ */
 
-.nav{
+nav {
     display: flex;
     padding: 20px 35px 20px 45px;
     font-size: large;
     font-family: 'Source Sans Pro', sans-serif;
+    position: static;
 }
 
-.logo{
+nav .logo {
     font-size: x-large;
 }
 
-.nav ul{
+nav ul {
     display: flex;
     list-style: none;
     justify-content: flex-end;
@@ -33,37 +34,52 @@ body{
     gap: 40px;
 }
 
-.nav ul li a{
+nav ul li a {
     color: black;
 }
 
-.nav ul li a:hover{
+nav ul li a:hover {
     text-decoration: underline 2px;
 }
 
-.nav .hello{
+nav .hello {
     border: 1px solid black;
     padding: 5px;
     border-radius: 3px;
 }
 
+nav .mobileNav #menuIcon {
+    display: none;
+    width: 32px;
+}
+
+nav .closeMenuBtn {
+    display: none;
+    width: 60px;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 /* =========== Home ============ */
 
-#home{
+#home {
     display: flex;
     flex-direction: column;
     height: 88vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.text{
+.text {
     font-size: 45px;
     margin-bottom: 6vh;
 }
 
-.hello2{
+.hello2 {
     border: 2px solid black;
     padding: 12px 45px;
     border-radius: 3px;
@@ -73,7 +89,7 @@ body{
     overflow: hidden;
 }
 
-.hello2::before{
+.hello2::before {
     content: '';
     position: absolute;
     background-color: black;
@@ -86,11 +102,11 @@ body{
     z-index: -1;
 }
 
-.hello2:hover:before{
+.hello2:hover:before {
     transform: translateX(0);
 }
 
-.hello2:hover{
+.hello2:hover {
     color: ghostwhite;
 }
 
@@ -100,7 +116,7 @@ body{
 
 /* =========== Socials bar ============ */
 
-.socials{
+.socials {
     position: absolute;
     top: 25%;
     /* transform: translateY(-50%); */
@@ -109,7 +125,7 @@ body{
     padding: 0.5rem;
 }
 
-.social{
+.social {
     width: 3rem;
 }
 
@@ -119,3 +135,52 @@ body{
     padding: 0.5rem;
     border-radius: 6px;
 }
+
+/* =========== Under Development page ============ */
+#underdev {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    font-size: 3rem;
+}
+
+/* ============== Media Queries ============== */
+
+@media screen and (max-width: 600px) {
+    nav .navLinks {
+        display: none;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.88);
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        z-index: 1;
+    }
+    nav .navLinks li a {
+        color: white;
+    }
+    nav .mobileNav #menuIcon {
+        display: inline;
+    }
+    nav .hello {
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+  }
