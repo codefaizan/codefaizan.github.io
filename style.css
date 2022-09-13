@@ -146,6 +146,8 @@ nav .closeMenuBtn {
     justify-content: center;
     font-size: 1.1rem;
     font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid grey;
+    
 }
 
 p{
