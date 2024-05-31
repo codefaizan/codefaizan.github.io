@@ -25,11 +25,11 @@
         
         <ul class="navLinks">
             <li><a href="/index.html">HOME</a></li>
-            <li><a href="#underdev">ABOUT</a></li>
-            <li><a href="#underdev">PROJECTS</a></li>
+            <!-- <li><a href="#underdev">ABOUT</a></li> -->
+            <li><a href="#portfolio">PORTFOLIO</a></li>
             <img class="closeMenuBtn" src="./images/cross.png" alt="">
         </ul>
-        <a class="hello" href="mailto:faizancodes@gmail.com" >SAY HELLO</a>
+        <a class="hello" href="mailto:faizan2002a@gmail.com" >SAY HELLO</a>
         <div class="mobileNav">
             <img id="menuIcon" src="./images/menu-icon.svg" alt="menu-icon">
         </div>
@@ -40,10 +40,10 @@
         <div class="text">
             Hello, I'm <b class="highlight">Faizan Ahmad</b>
             <br>
-            I'm a web developer.
+            Flutter Developer with skills and practical experience in UI & Firebase
         </div>
         
-            <a href="mailto:faizancodes@gmail.com" class="hello hello2">Say Hello</a>
+            <a href="mailto:faizan2002a@gmail.com" class="hello hello2">Download Resume</a>
         
     </div>
 
@@ -64,19 +64,19 @@
             </a>
         </div>
 
-        <div class="social">
+        <!-- <div class="social">
             <a href="https://twitter.com/faizaanpk" class="social-icon-link" rel="noreferrer" target="_blank">
                 <img src="https://img.icons8.com/ios-filled/344/instagram-new--v1.png" width="31px"
                     alt="Faizan Instagram Profile" class="social-icon">
             </a>
-        </div>
+        </div> -->
 
-        <div class="social">
+        <!-- <div class="social">
             <a href="https://twitter.com/faizaanpk" class="social-icon-link" rel="noreferrer" target="_blank">
                 <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"
                     alt="Faizan Twitter Profile" class="social-icon">
             </a>
-        </div>
+        </div> -->
 
         <div class="social">
             <a href="/" class="social-icon-link">
@@ -86,10 +86,63 @@
         </div>
     </div>
 
-    <div id="underdev">
-        <p>Work in Progress</p>
-        This page is under Development
+    <!-- =========== Portfolio ============ -->
+<div id="portfolio">
+    <h2 class="portfolio-title">Portfolio</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-item" onclick="openModal('modal1')">
+            <img src="https://developerfolio.js.org/static/media/googleAssistantLogo.f720c71652579588524a.webp" alt="Project 1" class="portfolio-image">
+            <div class="portfolio-overlay">
+                <div class="portfolio-text">HR Management App</div>
+            </div>
+        </div>
+        <div class="portfolio-item" onclick="openModal('modal2')">
+            <img src="https://developerfolio.js.org/static/media/googleAssistantLogo.f720c71652579588524a.webp" alt="Project 2" class="portfolio-image">
+            <div class="portfolio-overlay">
+                <div class="portfolio-text">Auctions App</div>
+            </div>
+        </div>
+        <div class="portfolio-item" onclick="openModal('modal3')">
+            <img src="https://developerfolio.js.org/static/media/googleAssistantLogo.f720c71652579588524a.webp" alt="Project 3" class="portfolio-image">
+            <div class="portfolio-overlay">
+                <div class="portfolio-text">E-Commerce App</div>
+            </div>
+        </div>
     </div>
+</div>
+
+<!-- =========== Modals ============ -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>HR Management App</h2>
+        <p>
+            <!-- content -->
+        </p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Auctions App</h2>
+        <p>
+            <!-- Details about Project 2.. -->
+        </p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>E-Commerce App</h2>
+        <p>
+            <!-- Details about Project 3... -->
+        </p>
+    </div>
+</div>
+
+
 
     <script src="script.js"></script>
 </body>

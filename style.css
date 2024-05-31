@@ -72,11 +72,14 @@ nav .closeMenuBtn {
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
+
 }
 
 .text {
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 6vh;
+    text-align: center;
+    padding: 0px 10% 0px 12%;
 }
 
 .hello2 {
@@ -118,6 +121,7 @@ nav .closeMenuBtn {
 
 .socials {
     position: absolute;
+    
     top: 25%;
     /* transform: translateY(-50%); */
     background-color: rgb(199, 200, 202);
@@ -186,3 +190,130 @@ p{
         justify-content: space-between;
     }
   }
+
+/* =========== Portfolio ============ */
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.portfolio-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-text {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* =========== Modals ============ */
+.modal {
+    display: none;
+    position: fixed;
+    
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border-radius: 10px;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ============== Media Queries ============== */
+@media screen and (max-width: 600px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
