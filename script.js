@@ -134,6 +134,7 @@ elementsToAnimate.forEach(el => {
 // ========== TYPING EFFECT FOR HERO SUBTITLE ==========
 const subtitleElement = document.querySelector('.hero-subtitle');
 const originalText = 'Software Engineer';
+const placeholderText = '\u00A0'.repeat(originalText.length);
 const typingSpeed = 100;
 const deletingSpeed = 50;
 const pauseTime = 2000;
@@ -143,7 +144,7 @@ let isDeleting = false;
 
 function typeEffect() {
     const currentText = originalText.substring(0, charIndex);
-    subtitleElement.textContent = currentText;
+    subtitleElement.textContent = currentText || placeholderText;
 
     if (!isDeleting && charIndex < originalText.length) {
         charIndex++;

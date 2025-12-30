@@ -372,6 +372,9 @@ body {
     margin-bottom: 20px;
     font-weight: 700;
     display: inline-block;
+    min-height: 32px;
+    min-width: 14ch;
+    white-space: pre;
 }
 
 .hero-description {
@@ -1804,6 +1807,9 @@ section {
 
     .hero-subtitle {
         font-size: 20px;
+        min-height: 28px;
+        min-width: 12ch;
+        white-space: pre;
     }
 
     .hero-description {
@@ -1814,6 +1820,12 @@ section {
         flex-direction: column;
         width: 100%;
         max-width: 300px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .social-links {
+        margin-top: 16px;
     }
 
     .btn {
@@ -1841,6 +1853,10 @@ section {
 
     .mini-card span {
         font-size: 10px;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 
     .projects-grid {
