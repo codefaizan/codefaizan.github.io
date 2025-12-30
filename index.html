@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan Ahmad - Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-circle-1"></div>
+            <div class="gradient-circle-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hi, I'm</span>
+                            <span class="name">Faizan<br>Ahmad</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Software Engineer</h2>
+                        <p class="hero-description">
+                            Mobile and backend engineer with 2+ years building cross-platform apps and scalable APIs. I ship performant Flutter experiences and robust Django/Node.js services that handle real-time chat, payments, and data-heavy workloads.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#projects" class="btn btn-secondary">View My Work</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="mailto:faizan2002a@gmail.com" target="_blank" class="social-icon" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/codefaizan/" target="_blank" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/codefaizan" target="_blank" class="social-icon" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Profile Section -->
+                <div class="hero-profile">
+                    <div class="profile-container">
+                        <div class="profile-photo-wrapper">
+                            <div class="profile-image-container">
+                                  <img src="profile-photo.jpeg" alt="Faizan Ahmad" class="profile-photo">
+                            </div>
+                            <div class="profile-ring"></div>
+                        </div>
+                        <div class="profile-cards">
+                            <div class="mini-card">
+                                <div class="mini-icon mini-icon-django" aria-label="Django"></div>
+                                <span>Django</span>
+                            </div>
+                             <div class="mini-card">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Flutter Apps</span>
+                            </div>
+                            <div class="mini-card">
+                                <i class="fab fa-node"></i>
+                                <span>Node.js</span>
+                            </div>
+    
+                            <div class="mini-card">
+                                <i class="fas fa-bolt"></i>
+                                <span>Real-time</span>
+                            </div>
+                            <div class="mini-card">
+                                <i class="fas fa-bell"></i>
+                                <span>FCM & Push</span>
+                            </div>
+                            <div class="mini-card">
+                                <i class="fas fa-lock"></i>
+                                <span>Auth & Payments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Summary</h3>
+                    <p>
+                        Software Engineer with 2+ years building cross-platform mobile apps and scalable backends. I specialize in Flutter, Django, and Node.js—shipping real-time chat, secure payments, and event-driven APIs that stay performant under growth. I focus on clean architecture, reliable data flows, and measurable improvements to latency and UX.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Islamabad, Pakistan</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+92 303 0752535</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>faizan2002a@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h4>2+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>12+</h4>
+                        <p>Releases Shipped</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>99%</h4>
+                        <p>Uptime Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">July 2024 – Present</span>
+                        <h3>Software Engineer</h3>
+                        <h4>Inara Technologies | Islamabad</h4>
+                        <ul>
+                            <li>Build and maintain mobile and backend apps with Flutter, Django, Node.js, and Firebase to keep experiences fast and reliable.</li>
+                            <li>Shipped real-time chat with WebSockets, secure payments, and push notifications via FCM.</li>
+                            <li>Optimized database queries and API paths, cutting response times by ~20%.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan 2024 – July 2024</span>
+                        <h3>Flutter Developer</h3>
+                        <h4>Astute Technologies | Bahawalpur</h4>
+                        <ul>
+                            <li>Built and optimized Flutter apps backed by Firebase for smooth real-time data sync.</li>
+                            <li>Improved UI responsiveness and reliability for customer-facing mobile experiences.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Storage Backend</h3>
+                    <p>Secure, scalable Django backend for a cloud storage app with authentication, account management, and storage usage tracking. Hardened APIs for file management with an S3-backed media pipeline.</p>
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>REST</span>
+                        <span>S3</span>
+                        <span>Auth</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>ETL & Data Ingestion Platform</h3>
+                    <p>ETL pipeline ingesting CSV/TXT/Excel into ClickHouse with cleaning, validation, and transformations to keep analytical datasets consistent and ready for reporting.</p>
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>ClickHouse</span>
+                        <span>ETL</span>
+                        <span>Data Quality</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>B2B E-commerce Backend</h3>
+                    <p>Django backend powering bids between retailers and manufacturers. Managed proposal workflows, approvals, and order aggregation for fulfillment.</p>
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                        <span>REST</span>
+                        <span>Workflows</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Foundation Gas Distributors App</h3>
+                    <p>Flutter + Node.js app for gas distributors to book, track deliveries in real time, and manage invoices—replacing manual phone bookings.</p>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Node.js</span>
+                        <span>Firebase</span>
+                        <span>Real-time</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Soul of Agri</h3>
+                    <p>Flutter + Django app connecting farmers with experts for crop advice, tips, and guided support to improve farming practices.</p>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Django</span>
+                        <span>Advisory</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>EventHub</h3>
+                    <p>Event management app with Firebase real-time updates and notifications, keeping organizers and attendees in sync.</p>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Notifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend & APIs</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django">
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <span>REST & WebSockets</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <span>Auth & Payments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter">
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="Dart">
+                            <span>Dart</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="Firebase">
+                            <span>Firebase / FCM</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <span>Push & Realtime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data & Storage</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <span>MySQL / SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>ClickHouse</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <span>Object Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Delivery</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <span>Agile</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <span>Performance Tuning</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-placeholder">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <span>Testing & QA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certificates</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Bachelor of Science in Software Engineering</h3>
+                    <h4>The Islamia University of Bahawalpur</h4>
+                    <p class="education-date">September 2020 – May 2024</p>
+                    <p class="cgpa">CGPA: 3.80/4.00</p>
+                    <p>Coursework: Databases, OOP, Data Structures & Algorithms, Software Engineering, AI, Cloud Computing, Computer Networks.</p>
+                </div>
+                <div class="certificates">
+                    <h3>Extracurricular</h3>
+                    <div class="cert-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>Tech Destination of Pakistan – Volunteer</h4>
+                            <p>Organized and hosted training sessions to equip students with practical tech skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <a href="mailto:faizan2002a@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>faizan2002a@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+923030752535" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+92 303 0752535</p>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Islamabad, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Faizan Ahmad. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="mailto:faizan2002a@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/codefaizan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/codefaizan" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
