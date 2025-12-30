@@ -730,6 +730,9 @@ section {
     grid-template-columns: 1.5fr 1fr;
     gap: 80px;
     align-items: start;
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
 }
 
 .about-text h3 {
@@ -870,6 +873,9 @@ section {
     position: relative;
     padding-left: 80px;
     margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
 }
 
 .timeline-item:last-child {
@@ -999,6 +1005,9 @@ section {
     transition: all 0.5s var(--transition-bounce);
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: transform, opacity;
 }
 
 .project-card::before {
@@ -1149,6 +1158,9 @@ section {
     border-radius: 24px;
     border: 1px solid var(--border-color);
     transition: all 0.4s var(--transition-smooth);
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
 }
 
 .skill-category:hover {
@@ -1320,6 +1332,9 @@ section {
     transition: all 0.4s var(--transition-smooth);
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
 }
 
 .education-card::before {
@@ -1411,6 +1426,9 @@ section {
     border: 1px solid var(--border-color);
     margin-bottom: 16px;
     transition: all 0.4s var(--transition-bounce);
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
 }
 
 .cert-item:hover {
@@ -1449,6 +1467,9 @@ section {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     gap: 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
 }
 
 .contact-info h3 {
@@ -1666,13 +1687,13 @@ section {
 
 /* ========== ANIMATIONS ========== */
 .fade-in {
-    animation: fadeInUp 0.8s var(--transition-smooth) forwards;
+    animation: fadeInUp 0.6s 0.05s var(--transition-smooth) forwards !important;
 }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -1680,16 +1701,34 @@ section {
     }
 }
 
-/* Staggered animation for cards */
-.project-card:nth-child(1) { animation-delay: 0.1s; }
-.project-card:nth-child(2) { animation-delay: 0.2s; }
-.project-card:nth-child(3) { animation-delay: 0.3s; }
+/* Staggered animation for cards - reduced delays for smoother effect */
+.project-card:nth-child(1) { animation-delay: 0.05s !important; }
+.project-card:nth-child(2) { animation-delay: 0.1s !important; }
+.project-card:nth-child(3) { animation-delay: 0.15s !important; }
 
-.skill-category:nth-child(1) { animation-delay: 0.1s; }
-.skill-category:nth-child(2) { animation-delay: 0.15s; }
-.skill-category:nth-child(3) { animation-delay: 0.2s; }
-.skill-category:nth-child(4) { animation-delay: 0.25s; }
-.skill-category:nth-child(5) { animation-delay: 0.3s; }
+.skill-category:nth-child(1) { animation-delay: 0.05s !important; }
+.skill-category:nth-child(2) { animation-delay: 0.08s !important; }
+.skill-category:nth-child(3) { animation-delay: 0.11s !important; }
+.skill-category:nth-child(4) { animation-delay: 0.14s !important; }
+.skill-category:nth-child(5) { animation-delay: 0.17s !important; }
+
+/* Staggered delays for timeline items */
+.timeline-item:nth-child(1) { animation-delay: 0.05s !important; }
+.timeline-item:nth-child(2) { animation-delay: 0.1s !important; }
+.timeline-item:nth-child(3) { animation-delay: 0.15s !important; }
+.timeline-item:nth-child(4) { animation-delay: 0.2s !important; }
+
+/* Staggered delays for education cards */
+.education-card:nth-child(1) { animation-delay: 0.05s !important; }
+.education-card:nth-child(2) { animation-delay: 0.1s !important; }
+.education-card:nth-child(3) { animation-delay: 0.15s !important; }
+
+/* Staggered delays for certificates */
+.cert-item:nth-child(1) { animation-delay: 0.05s !important; }
+.cert-item:nth-child(2) { animation-delay: 0.08s !important; }
+.cert-item:nth-child(3) { animation-delay: 0.11s !important; }
+.cert-item:nth-child(4) { animation-delay: 0.14s !important; }
+.cert-item:nth-child(5) { animation-delay: 0.17s !important; }
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 1024px) {
