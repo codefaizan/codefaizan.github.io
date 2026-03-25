@@ -1,23 +1,28 @@
 %-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-%------------------------
+% Minimal Dark Mode Resume
+%-------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage[sfdefault]{carlito}
-\input{glyphtounicode}
+\usepackage[sfdefault,light]{inter}
+\usepackage[T1]{fontenc}
+\usepackage{pagecolor}
+
+% Dark mode colors
+\definecolor{bgblack}{HTML}{0D0D0D}
+\definecolor{textwhite}{HTML}{E8E8E8}
+\definecolor{textgray}{HTML}{A0A0A0}
+\definecolor{accent}{HTML}{6B9FFF}
+
+\pagecolor{bgblack}
+\color{textwhite}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -25,91 +30,88 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Margins
+\usepackage[top=0.6in, bottom=0.6in, left=0.7in, right=0.7in]{geometry}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Section formatting - minimal line
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
+  \vspace{-2pt}\large\bfseries\color{textwhite}
+}{}{0em}{}[\color{textgray}\titlerule\vspace{-4pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{{#1 \vspace{-2pt}}}
+  \item\small{\color{textgray}#1\vspace{-2pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+      \textbf{\color{textwhite}#1} & \color{textgray}\small#2 \\
+      \small\color{textgray}#3 & \small\color{textgray}#4 \\
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+      \small\textbf{\color{textwhite}#1} & \color{textgray}#2 \\
+    \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={\color{accent}$\circ$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Faizan Ahmad} \\ \vspace{2pt}
-    \Large \textit{Software Engineer} \\ \vspace{4pt}
-    \small
-    +92 300 1752535 $|$
-    \href{mailto:faizan2002a@gmail.com}{\underline{faizan2002a@gmail.com}} $|$
-    \href{https://www.linkedin.com/in/codefaizan}{\underline{LinkedIn}} $|$
-    \href{https://github.com/codefaizan}{\underline{GitHub}} $|$
-    \href{https://faizancodes.com}{\underline{Portfolio}}
+    {\Huge\bfseries\color{textwhite} Faizan Ahmad}\\[6pt]
+    {\large\color{textgray} Software Engineer}\\[10pt]
+    \small\color{textgray}
+    +92 300 1752535 \hspace{8pt}
+    \href{mailto:faizan2002a@gmail.com}{\color{accent}faizan2002a@gmail.com} \hspace{8pt}
+    \href{https://www.linkedin.com/in/codefaizan}{\color{accent}LinkedIn} \hspace{8pt}
+    \href{https://github.com/codefaizan}{\color{accent}GitHub} \hspace{8pt}
+    \href{https://faizancodes.com}{\color{accent}faizancodes.com}
 \end{center}
+
+\vspace{-8pt}
 
 %-----------SUMMARY-----------
 \section{Summary}
-\small{
-Software Engineer with 2+ years of experience in mobile and backend development. Strong background in building cross-platform applications and scalable backend systems using Flutter, Django, and Node.js. Proven ability to optimize performance, integrate real-time features, and deliver production-ready solutions.
-}
+\small\color{textgray}
+Full-Stack Software Engineer with 2+ years of production experience in cross-platform mobile and backend systems. Delivered end-to-end projects using Flutter, Django, and Node.js. 2024 grad with 3.80 CGPA.
+
+\vspace{-4pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Software Engineer}{July 2024 -- Present}
+{Software Engineer}{Jul 2024 -- Present}
 {Inara Technologies}{Islamabad}
 \resumeItemListStart
-\resumeItem{Developed and maintained mobile and backend applications using Flutter, Django, Node.js, and Firebase, improving scalability and system performance.}
-\resumeItem{Implemented real-time chat using WebSockets, secure online payment integrations, and push notifications via Firebase Cloud Messaging (FCM).}
-\resumeItem{Optimized API response times by approximately 20\% through query optimization and backend performance tuning.}
+\resumeItem{Built and maintained mobile/backend apps with Flutter, Django, Node.js, and Firebase}
+\resumeItem{Implemented real-time chat (WebSockets), payment integrations, and push notifications (FCM)}
+\resumeItem{Optimized API response times by ~20\% through query optimization and backend tuning}
 \resumeItemListEnd
 
 \resumeSubheading
-{Flutter Developer}{Jan 2024 -- July 2024}
+{Flutter Developer}{Jan 2024 -- Jul 2024}
 {Astute Technologies}{Bahawalpur}
 \resumeItemListStart
-\resumeItem{Built and optimized mobile applications using Flutter and Firebase with real-time data synchronization.}
-\resumeItem{Collaborated with backend and QA teams to deliver stable and user-friendly mobile solutions.}
+\resumeItem{Built mobile apps with Flutter and Firebase featuring real-time data sync}
+\resumeItem{Collaborated with backend and QA teams to ship stable, user-friendly solutions}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -119,43 +121,41 @@ Software Engineer with 2+ years of experience in mobile and backend development.
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Cloud Storage Backend} $|$ \emph{Django, S3}}{}
+{Cloud Storage Backend \color{textgray}-- Django, S3}{}
 \resumeItemListStart
-\resumeItem{Built a secure and scalable backend for a cloud storage platform with authentication, account management, and storage usage tracking.}
-\resumeItem{Designed REST APIs for file management with a focus on security, reliability, and performance for media-heavy workloads.}
+\resumeItem{Secure backend for cloud storage with auth, account management, and usage tracking}
+\resumeItem{REST APIs for file management optimized for media-heavy workloads}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{ETL \& Data Ingestion Platform} $|$ \emph{Django, ClickHouse}}{}
+{ETL \& Data Ingestion Platform \color{textgray}-- Django, ClickHouse}{}
 \resumeItemListStart
-\resumeItem{Developed an ETL pipeline to ingest data from CSV, TXT, and Excel sources.}
-\resumeItem{Implemented data cleaning, validation, and transformation workflows and loaded processed data into an analytical database.}
+\resumeItem{ETL pipeline ingesting CSV, TXT, and Excel sources with cleaning and validation workflows}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{B2B E-commerce Platform Backend} $|$ \emph{Django}}{}
+{B2B E-commerce Platform \color{textgray}-- Django}{}
 \resumeItemListStart
-\resumeItem{Developed backend workflows enabling manufacturers to bid on product requirements submitted by retailers and admins.}
-\resumeItem{Implemented order aggregation and dispatch logic for manufacturer fulfillment.}
+\resumeItem{Backend workflows for bidding, order aggregation, and manufacturer fulfillment}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Gas Distributor Mobile App} $|$ \emph{Flutter, Node.js}}{}
+{Gas Distributor Mobile App \color{textgray}-- Flutter, Node.js}{}
 \resumeItemListStart
-\resumeItem{Built a mobile app for gas distributors to book gas, track deliveries in real time, and manage invoices and payments.}
-\resumeItem{Replaced manual phone-based booking processes, significantly improving operational efficiency.}
+\resumeItem{Digitized order management replacing manual phone-based booking with mobile platform}
+\resumeItem{Self-serve booking system with order claiming and tracking for distributors}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Soul of Agri} $|$ \emph{Flutter, Django}}{}
+{Soul of Agri \color{textgray}-- Flutter, Django}{}
 \resumeItemListStart
-\resumeItem{Developed an agricultural advisory app enabling farmers to consult experts and receive crop-related guidance.}
+\resumeItem{Agricultural advisory app connecting farmers with crop experts}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{EventHub} $|$ \emph{Flutter}}{}
+{EventHub \color{textgray}-- Flutter, Firebase}{}
 \resumeItemListStart
-\resumeItem{Built an event management app with real-time notifications using Firebase to improve organizer–attendee communication.}
+\resumeItem{Event management app with real-time notifications for organizer-attendee communication}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -163,32 +163,33 @@ Software Engineer with 2+ years of experience in mobile and backend development.
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
-
 \resumeSubheading
 {The Islamia University of Bahawalpur}{Bahawalpur, Punjab}
-{BS Software Engineering (CGPA: 3.80)}{Sept 2020 -- May 2024}
-
+{BS Software Engineering -- CGPA: 3.80}{2020 -- 2024}
 \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{
+\section{Skills}
+\begin{itemize}[leftmargin=0.1in, label={}]
+\small\color{textgray}{
 \item{
-\textbf{Technologies}{: Flutter, Django, Node.js, SQL, Firebase} \\
-\textbf{Tools}{: Git, REST APIs, WebSockets, S3} \\
-\textbf{Methodologies}{: Agile Development}
+\textbf{\color{textwhite}Stack:} Flutter, Django, Node.js, SQL, Firebase \hspace{12pt}
+\textbf{\color{textwhite}Tools:} Git, REST APIs, WebSockets, S3 \hspace{12pt}
+\textbf{\color{textwhite}Methods:} Agile
 }}
 \end{itemize}
+
+\vspace{-12pt}
 
 %-----------EXTRACURRICULAR-----------
 \section{Extracurricular}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Volunteer}{}
-{Tech Destination of Pakistan Digital Conference}{}
+{Volunteer}{Tech Destination of Pakistan Digital Conference}
+{}{}
+\vspace{-16pt}
 \resumeItemListStart
-\resumeItem{Organized and hosted training sessions aimed at equipping students with modern, in-demand technology skills.}
+\resumeItem{Organized training sessions equipping students with modern technology skills}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 

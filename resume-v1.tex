@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[sfdefault]{carlito}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Faizan Ahmad} \\ \vspace{2pt}
+    \Large \textit{Software Engineer} \\ \vspace{4pt}
+    \small
+    +92 300 1752535 $|$
+    \href{mailto:faizan2002a@gmail.com}{\underline{faizan2002a@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/codefaizan}{\underline{LinkedIn}} $|$
+    \href{https://github.com/codefaizan}{\underline{GitHub}} $|$
+    \href{https://faizancodes.com}{\underline{Portfolio}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+Software Engineer with 2+ years of experience in mobile and backend development. Strong background in building cross-platform applications and scalable backend systems using Flutter, Django, and Node.js. Proven ability to optimize performance, integrate real-time features, and deliver production-ready solutions.
+}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Engineer}{July 2024 -- Present}
+{Inara Technologies}{Islamabad}
+\resumeItemListStart
+\resumeItem{Developed and maintained mobile and backend applications using Flutter, Django, Node.js, and Firebase, improving scalability and system performance.}
+\resumeItem{Implemented real-time chat using WebSockets, secure online payment integrations, and push notifications via Firebase Cloud Messaging (FCM).}
+\resumeItem{Optimized API response times by approximately 20\% through query optimization and backend performance tuning.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Flutter Developer}{Jan 2024 -- July 2024}
+{Astute Technologies}{Bahawalpur}
+\resumeItemListStart
+\resumeItem{Built and optimized mobile applications using Flutter and Firebase with real-time data synchronization.}
+\resumeItem{Collaborated with backend and QA teams to deliver stable and user-friendly mobile solutions.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Cloud Storage Backend} $|$ \emph{Django, S3}}{}
+\resumeItemListStart
+\resumeItem{Built a secure and scalable backend for a cloud storage platform with authentication, account management, and storage usage tracking.}
+\resumeItem{Designed REST APIs for file management with a focus on security, reliability, and performance for media-heavy workloads.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{ETL \& Data Ingestion Platform} $|$ \emph{Django, ClickHouse}}{}
+\resumeItemListStart
+\resumeItem{Developed an ETL pipeline to ingest data from CSV, TXT, and Excel sources.}
+\resumeItem{Implemented data cleaning, validation, and transformation workflows and loaded processed data into an analytical database.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{B2B E-commerce Platform Backend} $|$ \emph{Django}}{}
+\resumeItemListStart
+\resumeItem{Developed backend workflows enabling manufacturers to bid on product requirements submitted by retailers and admins.}
+\resumeItem{Implemented order aggregation and dispatch logic for manufacturer fulfillment.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Gas Distributor Mobile App} $|$ \emph{Flutter, Node.js}}{}
+\resumeItemListStart
+\resumeItem{Built a mobile app for gas distributors to book gas, track deliveries in real time, and manage invoices and payments.}
+\resumeItem{Replaced manual phone-based booking processes, significantly improving operational efficiency.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Soul of Agri} $|$ \emph{Flutter, Django}}{}
+\resumeItemListStart
+\resumeItem{Developed an agricultural advisory app enabling farmers to consult experts and receive crop-related guidance.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{EventHub} $|$ \emph{Flutter}}{}
+\resumeItemListStart
+\resumeItem{Built an event management app with real-time notifications using Firebase to improve organizer–attendee communication.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{The Islamia University of Bahawalpur}{Bahawalpur, Punjab}
+{BS Software Engineering (CGPA: 3.80)}{Sept 2020 -- May 2024}
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+\item{
+\textbf{Technologies}{: Flutter, Django, Node.js, SQL, Firebase} \\
+\textbf{Tools}{: Git, REST APIs, WebSockets, S3} \\
+\textbf{Methodologies}{: Agile Development}
+}}
+\end{itemize}
+
+%-----------EXTRACURRICULAR-----------
+\section{Extracurricular}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Volunteer}{}
+{Tech Destination of Pakistan Digital Conference}{}
+\resumeItemListStart
+\resumeItem{Organized and hosted training sessions aimed at equipping students with modern, in-demand technology skills.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
