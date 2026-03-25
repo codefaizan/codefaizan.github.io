@@ -81,7 +81,7 @@ portfolio_website/
 ## 📧 Contact Information
 
 - **Email**: faizan2002a@gmail.com
-- **Phone**: +92 303 0752535
+- **Phone**: +92 300 1752535
 - **Location**: Islamabad, Pakistan
 - **LinkedIn**: [Profile Link]
 - **GitHub**: [Profile Link]

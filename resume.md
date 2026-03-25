@@ -1,7 +1,7 @@
 # Faizan Ahmad Software Engineer
 
 ```
-+92 303 0752535 | faizan2002a@gmail.com| Linkedin | Github
++92 300 1752535 | faizan2002a@gmail.com| Linkedin | Github
 ```
 **SUMMARY**
 
